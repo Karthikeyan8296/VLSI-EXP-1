@@ -1,12 +1,12 @@
- EXP.NO- 1 
-
-DATE- 
+EXP.NO: 1 
                     SIMULATION AND IMPLEMENTATION OF LOGIC GATES AND 
                                            4 BIT ADDER & SUBTRACTOR 
 
 AIM: To simulate and synthesis Logic Gates, Adders and Subtractor using VIVADO 
 
+
 APPARATUS REQUIRED: VIVADO 2023.2 
+
 
 PROCEDURE: 
 
@@ -31,6 +31,7 @@ STEP:6 Click the simulation to simulate the program and give the inputs and veri
 
 
 LOGIC-GATES: 
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/fe825cf3-cf22-45f2-8953-c605426076da)
 
                             
@@ -38,17 +39,29 @@ LOGIC-GATES:
 PROGRAM: 
 
 module logic_gates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
+
 input a,b;
+
 output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
+
 and(andgate,a,b);
+
 or(orgate,a,b);
+
 xor(xorgate,a,b);
+
 nand(nandgate,a,b);
+
 nor(norgate,a,b);
+
 xnor(xnorgate,a,b);
+
 not(notgate,a);
+
 endmodule
+
 OUTPUT:       
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/e3bb8a12-f37c-42ac-925f-143296448b83)
 
  
@@ -56,6 +69,7 @@ OUTPUT:
 
 
 HALF ADDER: 
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/dfb9ede6-56e4-4a12-ba58-aafe034023e7)
 
 
@@ -67,10 +81,15 @@ HALF ADDER:
 PROGRAM: 
 
 module ha(a,b,sum,carry);
+
 input a,b;
+
 output sum,carry;
+
 assign sum=a^b;
+
 assign carry=a&b;
+
 endmodule
 
 
@@ -79,11 +98,13 @@ endmodule
 
 
 OUTPUT:
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/0a21eb1c-1806-4c63-9cb1-5ce8f55a5c23)
 
 
  
 HALFSUBTRACTOR: 
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/dd10a7e4-a9b3-4322-b681-2477af439761)
 
 
@@ -93,14 +114,20 @@ HALFSUBTRACTOR:
 
 PROGRAM: 
 module hs(a,b,diff,borrow);
+
 input a,b; 
+
 output diff,borrow;
+
 assign diff=a^b; 
+
 assign borrow=~a&b;
+
 endmodule
 
 
 OUTPUT:
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/4d9d5900-1f2f-411d-9107-040496bbb93c)
 
  
@@ -109,6 +136,7 @@ OUTPUT:
 
 
 FULLADDER: 
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/69627c10-cd9b-4dbe-96bb-e788158a0286)
 
 
@@ -118,15 +146,21 @@ FULLADDER:
 PROGRAM: 
 
 module fa(a,b,c,sum,carry);
+
 input a,b,c; 
+
 output sum,carry;
+
 assign sum=a^b^c; 
+
 assign carry=(a&b)|(a&c)|(b&c);
+
 endmodule
 
 
 
 OUTPUT:
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/0253e8f4-68f4-41cb-aa0a-e0816101ad99)
 
 
@@ -136,6 +170,7 @@ OUTPUT:
 
 
 FULLSUBTRACTOR: 
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/e199046a-1577-4844-9f9e-9f2b67d26382)
 
 
@@ -151,18 +186,25 @@ FULLSUBTRACTOR:
 PROGRAM: 
 
 module fs(a,b,c,diff,borrow);
+
 input a,b,c;
+
 output diff,borrow;
+
 assign diff=a^b^c; 
+
 assign borrow=(~a&c)|(~a&b)|(b&c); 
+
 endmodule
 
 
 OUTPUT:
+
 ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/4377c1ba-9c64-476b-8873-5802eeb492bd)
 
 
  8-BIT-RIPPLE-CARRY-ADDER: 
+ 
  ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/7a15fa9f-b3f6-4e67-b577-1df899110d05)
 
 
@@ -236,6 +278,7 @@ endmodule
 
 
 OUTPUT: 
+
  ![image](https://github.com/Karthikeyan8296/VLSI-EXP-1/assets/165583967/0268a8d3-2f03-4ce2-b33c-25c5bb932aeb)
 
 
