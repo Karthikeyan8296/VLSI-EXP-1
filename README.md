@@ -1,6 +1,8 @@
 EXP.NO: 1 
-                    SIMULATION AND IMPLEMENTATION OF LOGIC GATES AND 
-                                           4 BIT ADDER & SUBTRACTOR 
+
+DATE: 13/02/2024
+
+SIMULATION AND IMPLEMENTATION OF LOGIC GATES AND 4 BIT ADDER & SUBTRACTOR 
 
 AIM: To simulate and synthesis Logic Gates, Adders and Subtractor using VIVADO 
 
